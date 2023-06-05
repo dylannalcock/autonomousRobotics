@@ -1,0 +1,9 @@
+rosrun map_server map_server $(rospack find cse478)/maps/cse022.yaml
+
+roslaunch localization particle_filter_sim.launch use_namespace:=true publish_tf:=true tf_prefix:="car/"
+
+roslaunch control controller.launch type:=mpc tf_prefix:="car/"
+
+roslaunch planning planner_car.launch num_vertices:=1000 connection_radius:=20 curvature:=1
+
+

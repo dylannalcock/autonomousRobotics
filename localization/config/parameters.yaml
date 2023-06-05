@@ -1,0 +1,25 @@
+# Parameters for your particle filter
+
+motion_params:
+  vel_std:    0.05
+  delta_std:  0.1
+  x_std:      0.01
+  y_std:      0.01
+  theta_std:  0.00
+
+# best: 0.05, 0.1, 0.01, 0.01, 0.0 mm3
+# too_wde: 0.05, 0.1, 0.01, 0.01, 0.01 mm2
+# no_shake: 0.0, 0.1, 0.0, 0.0, 0.0 mm1
+
+sensor_params:
+  hit_std:    2
+  z_hit:      0.75
+  z_short:    0.05
+  z_max:      0.05
+  z_rand:     0.05
+
+
+ #5, 0.5, 0.05, 0.5, 0.5
+ #5, 0.75, 0.05, 0, 0.5  picks all 5 too brightly
+ #2, 0.25, 0.05, 0, 0.6 less bright, still all equal, some in other places
+ #2, 0.75, 0.05, 0.05, 0.05 sm3.png

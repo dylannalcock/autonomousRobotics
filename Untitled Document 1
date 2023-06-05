@@ -1,0 +1,6 @@
+1. Avoiding obstacles
+
+2. When distance lookahead is long, it doesn't widely overcorrect because no drastic measures needed for something so far ahead.
+   If it is short, it follows the path much better, better avoiding hitting obstacles similarly because of no shortcuts, but ends up doing drastic manuvers to get back on path, esp. on straight line. 
+   
+   SOLUTION: Improve avoid obstacles and keep distance lookahead long?
