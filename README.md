@@ -1,7 +1,7 @@
 # Project Title: "CodeCraft: Crafting Self-Driving Autonomy"
 
 ## Project Overview
-"Crafting Self-Driving Autonomy" represents a journey of hands-on exploration and coding in the realm of autonomous robotics. This project delves into the intricacies of designing and programming a self-driving robot using cutting-edge technologies and frameworks.
+"Crafting Self-Driving Autonomy" represents a journey of hands-on exploration and coding in the realm of autonomous robotics with my team of 4 members. This project delves into the intricacies of designing and programming a self-driving robot using cutting-edge technologies and frameworks.
 
 Throughout the project, I have tackled various facets of autonomous robotics, including sensor integration, localization, path planning, and control systems. Leveraging the MuSHR rally car platform, I have gained practical experience in implementing and fine-tuning these critical components.
 
