@@ -1,4 +1,4 @@
-# Project Title: "Crafting Self-Driving Autonomy"
+# Crafting Self-Driving Autonomy
 
 ## Project Overview
 "Crafting Self-Driving Autonomy" represents a journey of hands-on exploration and coding in the realm of autonomous robotics with our team of 4 members. This project delves into the intricacies of designing and programming a self-driving robot using cutting-edge technologies and frameworks.
