@@ -1,33 +1,42 @@
-# mushr478
+# Part 1: Getting Started with Autonomous Robots
 
-## Usage
+Welcome to the first part of my journey into the world of autonomous robots. In this section, I'll walk you through the key aspects of this project, which aims to familiarize me with the MuSHR platform and the software tools necessary for building a self-driving robot.
 
-This repository is meant to live in your ROS workspace's `src` directory. It expects to be overlaid on another workspace containing MuSHR dependency packages.
+## Project Overview
+The overarching goal of this project is to develop the skills and knowledge required to create a self-driving robot. To achieve this, I'll be working with the MuSHR platform and diving into the world of Robot Operating System (ROS). This first part serves as the foundation for subsequent phases.
 
-## Running Tests
+## 1. Setting Up the Virtual Machine
+To kick things off, I began by setting up a virtual machine environment. This step ensures that I have the necessary tools and software to work on the project. The virtual machine is configured to meet the project's requirements, and I've logged in using the provided credentials.
 
-Each package contains a `test` directory with unit and integration tests built with the [rosunit](https://wiki.ros.org/rosunit) framework. To run all of these tests:
+## 2. Getting Started with ROS
+ROS, the Robot Operating System, is the backbone of this project. It's not an actual operating system but rather a middleware framework extensively used in robotics. Here's what I've learned about ROS:
 
-    catkin test
+- ROS facilitates interprocess communication in robotics platforms.
+- ROS organizes code into packages, containing executables, libraries, and other resources.
+- Development in ROS is structured within workspaces, allowing me to manage multiple packages efficiently.
 
-If you just want to run tests for a particular package, add the package name onto the command as in this example:
+## 3. Running the MuSHR Car in Simulation
+This part of the project allowed me to run the MuSHR simulator and visualize the robot's movements in a virtual environment. It's a crucial step as it allows for quick testing and validation without the risk of real-world mishaps.
 
-    catkin test introduction
+## 4. Testing Instructions
+To ensure the correctness of my code and implementations, various tests have been provided for different project tasks. Here's a summary of the testing process:
 
-<details>
-<summary>Advanced Test Usage</summary>
+- Q1: Your First Publisher Node: Fibonacci
+  - Q1.1: I implemented the Fibonacci calculation algorithm.
+  - Q1.2: I interfaced with ROS, ensuring the node publishes Fibonacci numbers.
+  - Q1.3: I created a launch file for easier node execution.
 
-`catkin test` provides a summary view of all test results. You may need to see more detailed logs if you are, for instance, diagnosing why test isn't being run. To run tests for a package and see more log output:
+- Q2: Your First Subscriber: PoseListener
+  - Q2.1: I calculated the Euclidean norm using standard Python for loops.
+  - Q2.2: I optimized the norm calculation using NumPy for efficiency.
+  - Q2.3: I initialized a subscriber for car pose data.
+  - Q2.4: I processed car pose messages to extract relevant information.
+  - Q2.5: I collected and visualized data, creating plots of car locations and distances.
 
-    roscd introduction; catkin run_tests --no-deps --this
+- Q3: Advanced Indexing with NumPy
+  - Q3.1: I used integer array indexing for specific tasks.
+  - Q3.2: I applied Boolean array indexing to perform tasks efficiently.
 
-It is possible to run tests by individual file. The command differs by the types of tests; for tests that use ROS (they start a node, usually to publish or subscribe to topics from the code under test), use `rostest` to run the launch file for the test:
+Throughout the testing process, I aimed to ensure the functionality and efficiency of my code.
 
-    rostest introduction pose_listener.test --text
-
-For plain Python unit tests, simply run the file:
-
-    python3 $(rospack find introduction)/test/norms.py
-
-</details>
-
+By completing Part 1 of this Autonomous Robots Project, I've gained valuable knowledge and practical skills that will be instrumental in building a self-driving robot in the subsequent project phases. This marks the first step on my exciting robotics journey!
