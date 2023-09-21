@@ -62,3 +62,43 @@ To ensure the correctness of my code and implementations, various tests have bee
 Throughout the testing process, I aimed to ensure the functionality and efficiency of my code.
 
 By completing Part 1 of this Autonomous Robots Project, I've gained valuable knowledge and practical skills that will be instrumental in building a self-driving robot in the subsequent project phases. This marks the first step on my exciting robotics journey!
+
+# Part 2 README: MuSHR Car Localization with Particle Filter
+
+## Overview
+In this project phase, I've implemented a Particle Filter algorithm for localizing the MuSHR car. The Particle Filter is a probabilistic technique used to estimate the car's precise position and orientation within a known map based on sensor measurements and control inputs. This phase involved several key components and tasks, all aimed at improving the accuracy of the car's localization.
+
+### Particle Filter Components
+Throughout this phase, I've worked on various aspects of the Particle Filter localization:
+
+1. **Particle Initialization**: I initiated the Particle Filter by sampling particles from a Gaussian distribution, which represents our initial belief about the car's pose. This code can be found in the `particle_initializer.py` file within the `src/localization` directory.
+
+2. **Motion Model**: I implemented the kinematic car motion model in the `motion_model.py` file. This model predicts how the car's state changes in response to control inputs (velocity and steering angle). This code can be found in the `src/localization/motion_model.py` directory.
+
+3. **Sensor Model**: The LIDAR sensor model was a crucial component. It calculates the likelihood of sensor measurements given the current car state and map. The sensor model incorporates different modes such as hit, short, max, and random measurements. You can find the implementation of the sensor model in the `sensor_model.py` file within the `src/localization` directory.
+
+4. **Resampling**: To improve the accuracy of the Particle Filter, I implemented low-variance resampling in the `resampler.py` file. This process selects high-probability particles for the next iteration while discarding low-probability ones, which helps the filter converge to the true state. You can find this code in the `src/localization/resampler.py` directory.
+
+## What I've Accomplished
+Here's a summary of what I've accomplished in this project phase:
+
+- **Workspace Setup**: I ensured that my ROS workspace and dependencies were correctly set up to work on this part of the project.
+
+- **Parameter Tuning**: I spent time tuning parameters for both the motion model and sensor model to ensure they closely matched the actual behavior of the MuSHR car and its LIDAR unit. These parameters are located in the `config/parameters.yaml` file.
+
+- **Particle Filter Implementation**: I successfully implemented the Particle Filter algorithm, allowing the car to estimate its pose based on sensor data and control inputs.
+
+- **Simulation Testing**: I thoroughly tested the Particle Filter in simulation environments, using teleoperation and recorded bag files. These tests helped me evaluate the accuracy of my localization and validate my parameter tuning efforts.
+
+- **Real-world Testing**: After verifying the performance in simulations, I transferred my code to the physical MuSHR car. I conducted real-world tests and recorded bag files while driving the car around the lab space.
+
+## Relevant Directories
+Recruiters and reviewers can find the relevant code and implementations in the following directories:
+
+- **Particle Initialization**: `src/localization/particle_initializer.py`
+- **Motion Model**: `src/localization/motion_model.py`
+- **Sensor Model**: `src/localization/sensor_model.py`
+- **Resampling**: `src/localization/resampler.py`
+- **Parameter Tuning**: `config/parameters.yaml`
+
+By examining the code in these directories, you can gain a deeper understanding of my contributions to this project and how I implemented the Particle Filter localization for the MuSHR car.
